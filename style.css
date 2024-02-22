@@ -16,6 +16,9 @@
     font-weight: 300;
 
 }
+body, html {
+    margin: 0;
+}
 .cat{
     width: 400px;
 }
@@ -26,7 +29,7 @@
     display: flex;
     padding: 50px ; 
     position: relative;
-    
+    flex-wrap: wrap;
 }
 .inner {
     
@@ -65,4 +68,15 @@
 .fees {
     font-family: "Montserrat";
     font-weight: 400;
+}
+
+@media (max-width: 800px) {
+    .films {
+        width: calc(100% - 26px);
+        padding: 10px;
+    }
+    .film {
+        width: 100%;
+        margin: 40px 0;
+    }
 }
