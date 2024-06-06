@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>сказки</title>
+        <link rel="stylesheet" href="style.css">
+        <link
+        rel="stylesheet"
+        href="libs/swiper-bundle.min.css"
+      />
+      <script src="libs/swiper-bundle.min.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__logo"> 
+                <a href="index.html"><img src="images/logo.svg"></a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a class="menu__link" href="bashkr.html">Башкирские</a>
+                    </li>
+                    <li>
+                        <a class="menu__link" href="tatar.html">Татарские</a>
+                    </li>
+                    <li>
+                        <a class="menu__link" href="rus.html">Русские</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+        <main>
+
+            <!-- Область баннера -->
+            <section>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                    
+                        <div class="swiper-slide">
+                            <img src="images/bashkr_fon.svg" alt="башкирский орнамент">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/tatar_fon.svg" alt="татарский орнамент">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/russ_fon.svg" alt="русский орнамент">
+                        </div>
+                    
+                    </div>
+                    
+                    <h1 class="banner-text">сказки</h1>
+                    <div class="swiper-pagination"></div>
+                
+                
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="about">
+                        <h2 class="about__title">ПРО СКАЗКИ</h2>
+                        <p class="about__text">
+                            Под сказкой чаще всего понимают фольклорное (народное) произведение, которое создавали и&nbsp;передавали в&nbsp;устной форме. Позже появился жанр литературной сказки. У&nbsp;такого произведения есть один автор, она закреплена в&nbsp;письменной форме, а&nbsp;ее&nbsp;сюжет зачастую связан с&nbsp;фольклорной сказкой.
+                            <br><br>
+                            Сказку как отдельный жанр начали выделять не&nbsp;раньше XVII века. До&nbsp;этого границы между эпическими жанрами были стерты, под&nbsp;сказкой можно подразумевать любой устный рассказ, основанный на&nbsp;вымышленных или полувымышленных событиях. В&nbsp;древние времена такие рассказы были главным инструментом передачи информации. Через мифы, легенды, былины люди транслировали свое представление мира, объясняли явления, которые не&nbsp;могли изучить и&nbsp;понять. Со&nbsp;временем у&nbsp;человечества появлялось больше способов изучить окружающий мир.
+                            <br><br>
+                            Сказка утратила свою первоначальную функцию, стала исключительно художественной единицей. Вымышленные истории использовали для&nbsp;развлечения и&nbsp;назидания, рассказывали их&nbsp;преимущественно детям. Сказки передавались из&nbsp;поколения в&nbsp;поколение, они обрастали новыми деталями. Поэтому у&nbsp;большинства сказок есть несколько вариантов, но&nbsp;основной сюжет и&nbsp;посыл всегда одинаковы. Так в&nbsp;сказках народ кодировал свою мудрость. 
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="langs">
+                        <a href="bashkr.html" class="langs__card">
+                            <div class="langs__logo">
+                                <img src="images/bashkr_logo.svg">
+                            </div>
+                            <p class="langs__name">Башкирские</p>
+                        </a>
+                        <a href="tatar.html" class="langs__card langs__card_border">
+                            <div class="langs__logo">
+                                <img src="images/tatar_logo.svg">
+                            </div>
+                            <p class="langs__name">Татарские</p>
+                        </a>
+                        <a href="rus.html" class="langs__card">
+                            <div class="langs__logo">
+                                <img src="images/russ_logo.svg">
+                            </div>
+                            <p class="langs__name">Русские</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <footer>
+            
+        </footer>
+
+
+        <script>
+            const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                loop: true,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                autoplay: {
+                    delay: 5000,
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // And if we need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+            });
+        </script>
+    </body>
+</html>
+
+

@@ -1,0 +1,814 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-Regular.ttf);
+    font-weight: 400;
+
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-Bold.ttf);
+    font-weight: 700;
+
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-Light.ttf);
+    font-weight: 300;
+
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-Medium.ttf);
+    font-weight: 500;
+
+}
+
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-Black.ttf);
+    font-weight: 900;
+
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-ExtraBold.ttf);
+    font-weight: 800;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1320px;
+    margin: auto;
+}
+
+.about {
+    display: flex;
+    padding-top: 200px;
+    gap: 40px;
+    padding-bottom: 170px;
+}
+
+.about__title {
+    width: 300px;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: "Montserrat";
+    line-height: 36px;
+}
+
+.about__text {
+    max-width: 760px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.header {
+    position: fixed;
+    z-index: 6;
+    padding: 40px;
+    display: flex;
+    width: calc( 100% - 80px );
+    align-items: center;
+}
+
+.menu__link  {
+    font-size: 15px;
+    font-family: "Montserrat";
+    color: #D9D9D9;
+    text-decoration: none;
+}
+
+.menu {
+    margin-left: 20px ;
+    width: 100%;
+}
+
+.menu ul {
+    display:flex;
+    list-style: none;
+    justify-content: space-around;
+    list-style: none;
+    padding-right: 65px;
+    padding-left: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 250px;
+    width: auto;
+    color: white;
+    margin: 0;
+    font-family: "Montserrat";
+    font-weight: 600;
+    z-index: 2;
+}
+
+.langs {
+    display: flex;
+    margin-bottom: 170px;
+}
+
+.langs__card {
+    flex: 1 1 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat";
+    font-weight:500 ;
+    font-size: 36px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+.langs__card_border {
+    border-right: solid 0.5px rgba(0, 0, 0, 0.5)  ;
+    border-left: solid 0.5px rgba(0, 0, 0, 0.5) ;    
+}
+
+.langs__logo {
+    height: 300px;
+}
+
+.langs__name p {
+    text-decoration: none;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Montserrat";
+    color: white;
+    font-size: 335px;
+    font-weight: 800;
+
+}
+
+.banner img {
+    width: 100%;
+    display: flex;
+}
+
+.section {
+    width: 100%;
+    color: white;
+}
+
+.section__green {
+    background-color:#46712C;
+}
+
+.section__red {
+    background-color:#84180D;
+}
+
+.section__yellow {
+    background-color:#EC9706;
+}
+
+.tales {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
+
+.tales__title {
+    font-family: "Montserrat";
+    font-weight:700 ;
+    font-size: 128px;
+    text-align: center;
+    color: black;
+}
+
+.tales__subtitle {
+    font-family: "Montserrat";
+    font-weight:700 ;
+    font-size: 64px;
+    text-align: center;
+    color: #042003;
+}
+
+.tales__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tales__card { 
+    text-decoration: none;
+}
+
+.tales__logo {
+    margin-top: 130px;
+    height: 400px;
+}
+
+.tales__logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain 
+}
+
+.tales__name {
+    font-family: "Montserrat";
+    font-weight:800 ;
+    font-size: 40px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.tales__name_green {
+    color: #46712C;
+}
+
+.tales__name_red {
+    color: #84180D;
+}
+
+.tales__name_yellow {
+    color: #CC7810;
+}
+
+.fairy-tale {
+    display: flex; 
+    padding-top: 200px; 
+    padding-bottom: 200px;
+    justify-content: space-between ;
+}
+
+.fairy-tale__name {
+    font-family: "Montserrat";
+    font-weight:900 ;
+    font-size: 115px;
+    margin-right: 129px ; 
+    line-height: 115px;
+    color: #46712C;
+}
+
+.fairy-tale__name_blue {
+    color: #081272;
+}
+
+.fairy-tale__name_brown {
+    color: #AE4307;
+}
+
+.fairy-tale__name_red {
+    color: #84180D;
+}
+
+
+.fairy-tale__name_light-blue {
+    color: #166AB9;
+}
+
+.fairy-tale__name_dark-brown {
+    color: #692905;
+}
+
+.fairy-tale__name_orange {
+    color: #CC7810;
+}
+
+.fairy-tale__name_light-green {
+    color: #388A07;
+}
+
+.fairy-tale__name_dark-orange {
+    color: #D15813;
+}
+
+.fairy-tale__info {
+    font-family: "Montserrat";
+    font-weight:400 ;
+    font-size: 24px; 
+    display: flex; 
+    width: calc(50% - 20px);
+    padding-top: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 29px;
+}
+
+.fairy-tale__btn {
+    background-color: #46712C;
+    text-decoration: none;
+    padding: 5px 20px 9px;
+    color: white;
+    margin-top: 60px;
+
+}
+
+.fairy-tale__btn_blue {
+    background-color: #081272;
+}
+
+.fairy-tale__btn_brown {
+    background-color: #AE4307;
+}
+
+.fairy-tale__btn_red {
+    background-color: #84180D;
+}
+
+.fairy-tale__btn_light-blue {
+    background-color: #166AB9;
+}
+
+.fairy-tale__btn_dark-brown {
+    background-color: #692905;
+}
+
+.fairy-tale__btn_orange {
+    background-color: #CC7810;
+}
+
+.fairy-tale__btn_light-green {
+    background-color: #388A07;
+}
+
+.fairy-tale__btn_dark-orange {
+    background-color: #D15813;
+}
+
+.detail-img {
+    height: 720px;
+    background-position: center bottom;
+    background-size: cover;
+}
+.shurale {
+    background-image: url('images/fon_shurale.jpg');
+}
+.vodanaya {
+    background-image: url('images/fon_vodanaya.png') ;
+}
+.goat {
+    background-image: url('images/fon_goat.jpg');
+}
+
+.zhiharka {
+    background-image: url('images/fon_shihark.jpg');
+}
+
+.frog {
+    background-image: url('images/fon_frog.jpg');
+}
+
+.bear {
+    background-image: url('images/fon_bear.jpg');
+}
+
+.sarbay {
+    background-image: url('images/fon_sarbay.png');
+}
+
+.bird {
+    background-image: url('images/fon_bird.jpg');
+}
+.abzalil {
+    background-image: url('images/fon_abzalil.jpg');
+}
+
+.heroes {
+    margin-bottom: 400px;
+    position: relative;
+}
+
+.heroes .container {
+    position: relative;
+}
+
+.heroes__title {
+    font-family: "Montserrat";
+    font-weight: 900 ;
+    font-size: 64px; 
+    margin-top: 78px;
+    margin-bottom: 54px;
+}
+
+.heroes__img {
+    margin-top: 35px;
+}
+
+.heroes__items {
+    display: flex;
+    gap: 40px;
+}
+
+
+.heroes__item {
+    display: flex;
+    width: calc(50% - 20px);
+    gap: 40px;
+    justify-content: flex-end;
+}
+
+.heroes__about {
+    width: calc(50% - 20px);
+}
+
+.heroes__about h3 {
+    font-family: "Montserrat";
+    font-weight: 700 ;
+    font-size: 32px; 
+    margin-bottom: 20px;
+}
+
+.heroes__about p {
+    font-family: "Montserrat";
+    font-weight: 400 ;
+    font-size: 18px;
+}
+
+.flower {
+    position: absolute;
+    top: 255px;
+    left: 0;
+    z-index: -1;
+}
+
+.leaf {
+    position: absolute;
+    left: 55%;
+    top: 435px;
+    z-index: -1;
+}
+
+.ridge {
+    position: absolute;
+    left: 150px;
+    top: 350px;
+    z-index: -1;
+}
+
+.grass {
+    position: absolute;
+    right: 0;
+    top: 250px;
+    z-index: -1;
+}
+
+.bag {
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    z-index: -1;
+}
+
+.head {
+    position: absolute;
+    top: 220px;
+    right: 69px;
+    z-index: -1;
+}
+
+.pot {
+    position: absolute;
+    left: 10%;
+    top: 500px;
+    z-index: -1;
+}
+
+.spoon {
+    position: absolute;
+    left: 35%;
+    top: 360px ;
+    z-index: -1;
+}
+
+.rope {
+    position: absolute;
+    top: 300px;
+    right: -3%;
+    z-index: -1;
+}
+
+.horse {
+    position: absolute;
+    top: 400px;
+    left: 21%;
+    z-index: -1;
+}
+
+.seno {
+    position: absolute;
+    top: 120px;
+    left: 3%;
+    z-index: -1;
+}
+
+.grably {
+    position: absolute;
+    top: 300px;
+    right: -5%;
+    z-index: -1;
+}
+
+.penok {
+    position: absolute;
+    top: 400px;
+    right: -10%;
+    z-index: -1;
+}
+
+.basket {
+    position: absolute;
+    top: 371px;
+    left: 24%;
+    z-index: -1;
+}
+
+.spoon-orange {
+    position: absolute;
+    top: 320px;
+    left: -2%;
+    z-index: -1;
+}
+
+.cookie {
+    position: absolute;
+    right: 0;
+    top: 225px;
+    z-index: -1;
+}
+
+
+.leaf2 {
+    position: absolute;
+    left: 2%;
+    top: 225px;
+    z-index: -1;
+}
+
+
+.arrow2 {
+    position: absolute;
+    left: 67%;
+    top: 225px;
+    z-index: -1;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    background: white;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    color: white;
+}
+
+div.swiper-button-next, div.swiper-button-prev {
+    top: 52%;
+}
+
+
+@media (max-width: 768px ) {
+    .menu__link {
+        padding: 8px;
+    }
+
+    .menu ul {
+        padding-right: 0;
+    }
+    
+    .swiper {
+        height: 400px;
+    }
+
+    .banner-text {
+        font-size: 90px;
+    }
+
+    .langs {
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .langs__card_border {
+        border: none;
+    }
+
+    .langs__card {
+        margin-bottom: 50px;
+    }
+
+    .langs__logo {
+        height: unset;
+    }
+
+    .about {
+        padding: 100px 20px;
+        flex-direction: column;
+    }
+
+    .tales__subtitle {
+        font-size: 44px;
+    }
+
+    .tales__title {
+        font-size: 50px;
+    }
+
+    .tales__items {
+        flex-direction: column;
+    }
+
+    .tales__card { 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tales__logo {
+        height: 300px;
+    }
+
+    .tales__logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .fairy-tale {
+        align-items: center;
+        padding: 100px 0;
+        flex-direction: column;
+    }
+
+    .fairy-tale__name {
+        font-size: 70px;
+        margin-right: 0; 
+        line-height: 90px;
+    } 
+
+    .heroes__items {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 100px 0 ;
+    }
+
+    .heroes {
+        overflow: hidden;
+        margin-bottom: 150px;
+    }
+
+    .detail-img {
+        height: 400px;
+    }
+
+    .leaf {
+        overflow: hidden;
+    }
+
+    .heroes__title {
+        font-size: 64px;
+    }
+
+    .fairy-tale__info {
+        font-size: 18px;
+        width: auto; 
+        align-items: center;
+    }
+
+    .heroes__img img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .heroes__item  {
+        width: auto;
+        flex-direction: column;
+    }
+
+    .heroes__about {
+        width: auto;
+    }
+
+    .leaf {
+        top: unset;
+        left: 20px;
+        bottom: 40px;
+    }
+
+    .spoon-orange {
+        top: 400px;
+        width: 400px;
+        left: 6%;
+    }
+
+    .cookie {
+        right: 0;
+        bottom: -30px;
+        width: 280px;
+        top: unset;
+    }
+
+    
+    .arrow2 {
+        top: 858px;
+        left: -18%;
+    }
+
+    .pot {
+        top: 461px;
+        width: 339px;
+        right: -12%;
+        left: auto;
+    }
+
+    .spoon {
+        width: 400px;
+        left: 7%;
+        top: auto;
+        bottom: 0;
+    }
+
+    
+    .horse {
+        top: 433px;
+        width: 308px;
+        right: -5%;
+    }
+    
+    .rope {
+        top: unset;
+        bottom: 78px;
+    }
+
+    .grably {
+        top: unset;
+        bottom: 70px;
+        width: 447px;
+        right: -11%;
+    }
+
+    .seno {
+        left: unset;
+        width: 480px;
+        top: 352px;
+        right: -32%;
+    }
+
+    .banner__text {
+        font-size: 100px;
+    }
+
+    .abzalil {
+        background-position: left;
+    }
+    
+    .bird {
+        background-position: 84%;
+    }
+
+    .sarbay {
+        background-position: 74%;
+    }
+
+    
+    .bear {
+        background-position: 67%;
+    }
+}
