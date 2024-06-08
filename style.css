@@ -255,6 +255,15 @@
     text-decoration: none;
 }
 
+.tales__card:hover img {
+    scale: 1.1;
+}
+
+.tales__card img {
+    transition: scale 0.3s ;
+
+}
+
 .tales__logo {
     margin-top: 130px;
     height: 400px;
