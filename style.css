@@ -90,6 +90,7 @@
 .menu__link  {
     font-size: 15px;
     font-family: "Montserrat";
+    font-weight: 600;
     color: #000;
     text-decoration: none;
 }
@@ -160,6 +161,15 @@
     margin-bottom: 50px;
     text-decoration: none;
     color: black;
+}
+
+.langs__card:hover img {
+    scale: 1.1;
+}
+
+.langs__card img {
+    transition: scale 0.3s ;
+
 }
 
 .langs__card_border {
