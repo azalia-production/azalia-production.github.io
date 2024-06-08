@@ -36,6 +36,6 @@ function isWithinVerticalBounds(parent, child) {
 
     // Проверяем, что верхняя граница child не выше верхней границы parent
     // и что нижняя граница child не ниже нижней границы parent
-    return childRect.top >= parentRect.top && childRect.bottom <= parentRect.bottom
-        || childRect.top >= parentRect.top && childRect.top <= parentRect.bottom && childRect.bottom >= parentRect.top;
+    return childRect.top + 55 >= parentRect.top && childRect.bottom <= parentRect.bottom
+        || childRect.top >= parentRect.top && childRect.top + 55 <= parentRect.bottom && childRect.bottom >= parentRect.top;
 }
