@@ -359,41 +359,80 @@
 .fairy-tale__btn {
     background-color: #46712C;
     text-decoration: none;
-    padding: 5px 20px 9px;
+    padding: 0px 20px 3px;
     color: white;
     margin-top: 60px;
+    position: relative;
+    display: block;
 
 }
 
-.fairy-tale__btn_blue {
+.fairy-tale__btn::before,
+.fairy-tale__btn::after
+{
+    content:"" ;
+    position: absolute;
+    background-color: #46712C;
+    z-index: -1;
+
+    width: calc(100% - 8px);
+    height: calc(100% + 8px);
+    left: 4px;
+    top: -4px;
+}
+
+.fairy-tale__btn::after {
+    width: calc(100% + 8px);
+    height: calc(100% - 8px);
+    left: -4px;
+    top: 4px;
+}
+
+.fairy-tale__btn_blue,
+.fairy-tale__btn_blue::before,
+.fairy-tale__btn_blue::after {
     background-color: #081272;
 }
 
-.fairy-tale__btn_brown {
+.fairy-tale__btn_brown,
+.fairy-tale__btn_brown::before,
+.fairy-tale__btn_brown::after {
     background-color: #AE4307;
 }
 
-.fairy-tale__btn_red {
+.fairy-tale__btn_red,
+.fairy-tale__btn_red::before,
+.fairy-tale__btn_red::after {
     background-color: #84180D;
 }
 
-.fairy-tale__btn_light-blue {
+.fairy-tale__btn_light-blue,
+.fairy-tale__btn_light-blue::before,
+.fairy-tale__btn_light-blue::after {
     background-color: #166AB9;
 }
 
-.fairy-tale__btn_dark-brown {
+.fairy-tale__btn_dark-brown,
+.fairy-tale__btn_dark-brown::before,
+.fairy-tale__btn_dark-brown::after {
     background-color: #692905;
 }
 
-.fairy-tale__btn_orange {
+.fairy-tale__btn_orange,
+.fairy-tale__btn_orange::before,
+.fairy-tale__btn_orange::after {
     background-color: #CC7810;
 }
 
-.fairy-tale__btn_light-green {
+.fairy-tale__btn_light-green,
+.fairy-tale__btn_light-green::before,
+.fairy-tale__btn_light-green::after {
     background-color: #388A07;
 }
 
-.fairy-tale__btn_dark-orange {
+.fairy-tale__btn_dark-orange,
+.fairy-tale__btn_dark-orange::before,
+.fairy-tale__btn_dark-orange::after {
     background-color: #D15813;
 }
 
