@@ -47,7 +47,6 @@ window.addEventListener('scroll', function () {
     const svgPos = svgMain.getBoundingClientRect();
     const winHeight = window.innerHeight;
     let i = 0;
-    console.log(winHeight + ' ' + svgPos.top)
     svgElements.forEach( (el) => {
         el.style.opacity = (winHeight + (500 - svgPos.top )*2  + i % 10 * 100) / winHeight;
         i++;
