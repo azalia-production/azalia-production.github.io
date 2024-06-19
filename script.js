@@ -39,3 +39,17 @@ function isWithinVerticalBounds(parent, child) {
     return childRect.top + 55 >= parentRect.top && childRect.bottom <= parentRect.bottom
         || childRect.top >= parentRect.top && childRect.top + 55 <= parentRect.bottom && childRect.bottom >= parentRect.top;
 }
+
+const svgMain = document.querySelector('.tales__title');
+const svgElements = document.querySelectorAll('.tales__title .cls-1');
+
+window.addEventListener('scroll', function () {
+    const svgPos = svgMain.getBoundingClientRect();
+    const winHeight = window.innerHeight;
+    let i = 0;
+    console.log(winHeight + ' ' + svgPos.top)
+    svgElements.forEach( (el) => {
+        el.style.opacity = (winHeight + (500 - svgPos.top )*2  + i % 10 * 100) / winHeight;
+        i++;
+    })
+})
